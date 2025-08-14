@@ -6,7 +6,6 @@ public class Apply {
     private String major;
     private String decision;
 
-    // Constructors
     public Apply() {}
 
     public Apply(int sID, String itpName, String major, String decision) {
@@ -16,15 +15,19 @@ public class Apply {
         this.decision = decision;
     }
 
-    // Getters and Setters
-    public int getsID() { return sID; }
-    public void setsID(int sID) { this.sID = sID; }
+    // JavaFX PropertyValueFactory compatible getters
+    public int getSID() { return sID; }
+    public void setSID(int sID) { this.sID = sID; }
     public String getItpName() { return itpName; }
     public void setItpName(String itpName) { this.itpName = itpName; }
     public String getMajor() { return major; }
     public void setMajor(String major) { this.major = major; }
     public String getDecision() { return decision; }
     public void setDecision(String decision) { this.decision = decision; }
+
+    // Keep backward compatibility
+    public int getsID() { return sID; }
+    public void setsID(int sID) { this.sID = sID; }
 
     @Override
     public String toString() {

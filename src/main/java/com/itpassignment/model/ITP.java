@@ -5,7 +5,6 @@ public class ITP {
     private String region;
     private int enrollment;
 
-    // Constructors
     public ITP() {}
 
     public ITP(String itpName, String region, int enrollment) {
@@ -14,7 +13,7 @@ public class ITP {
         this.enrollment = enrollment;
     }
 
-    // Getters and Setters
+    // JavaFX PropertyValueFactory compatible getters
     public String getItpName() { return itpName; }
     public void setItpName(String itpName) { this.itpName = itpName; }
     public String getRegion() { return region; }
